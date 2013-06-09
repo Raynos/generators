@@ -7,23 +7,34 @@
   "repository": "git://github.com/Raynos/generators.git",
   "main": "index",
   "homepage": "https://github.com/Raynos/generators",
-  "contributors": [{
-    "name": "Raynos"
-  }],
+  "contributors": [
+    {
+      "name": "Raynos"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/Raynos/generators/issues",
     "email": "raynos2@gmail.com"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "tape": "~1.0.2"
+  "dependencies": {
+    "continuable-generators": "~0.1.8",
+    "esprima": "git://github.com/Raynos/esprima#harmony",
+    "continuable": "~1.1.6",
+    "continuable-para": "~1.0.1",
+    "escodegen": "0.0.22",
+    "astw": "0.0.0"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://github.com/Raynos/generators/raw/master/LICENSE"
-  }],
+  "devDependencies": {
+    "tape-continuable": "~0.1.1"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/generators/raw/master/LICENSE"
+    }
+  ],
   "scripts": {
-    "test": "node ./test/index.js"
+    "test": "node --harmony ./test/index.js"
   },
   "testling": {
     "files": "test/index.js",
